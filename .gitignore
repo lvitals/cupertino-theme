@@ -1,0 +1,24 @@
+# Autotools artifacts
+Makefile
+Makefile.in
+/autom4te.cache/
+/aclocal.m4
+/configure
+/install-sh
+/missing
+/config.log
+/config.status
+/compile
+/depcomp
+/m4/
+/libtool
+/ltmain.sh
+/ar-lib
+
+# Project specific generated files
+wallpapers/cupertino-wallpaper.xml
+
+# Backup and swap files
+*~
+*.swp
+.DS_Store

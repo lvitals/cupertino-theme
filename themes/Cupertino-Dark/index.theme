@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Cupertino-Dark
+Comment=A MacOS Tahoe like Gtk+ theme based on Elegant Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Cupertino-Dark
+MetacityTheme=Cupertino-Dark
+IconTheme=Cupertino-dark
+ButtonLayout=close,minimize,maximize:menu
+
+BackgroundImage=/home/leandro/.local/share/backgrounds/cupertino/cupertino-night.jpeg

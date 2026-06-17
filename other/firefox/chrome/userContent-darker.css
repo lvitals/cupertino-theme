@@ -1,0 +1,7 @@
+@import "Cupertino/colors/light.css";
+@import "Cupertino/colors/darker.css";
+
+@import "Cupertino/pages/common.css";
+@import "Cupertino/pages/newtab.css";
+@import "Cupertino/pages/reader.css";
+@import "Cupertino/pages/privatebrowsing.css";

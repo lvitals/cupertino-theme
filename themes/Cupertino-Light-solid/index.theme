@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Cupertino-Light-solid
+Comment=A MacOS Tahoe like Gtk+ theme based on Elegant Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Cupertino-Light-solid
+MetacityTheme=Cupertino-Light-solid
+IconTheme=Cupertino-light
+ButtonLayout=close,minimize,maximize:menu
+
+BackgroundImage=/home/leandro/.local/share/backgrounds/cupertino/cupertino-day.jpeg
