@@ -34,6 +34,32 @@ install-data-local:
 	for icon in $(ICONS); do \
 		cp -pr $$icon $(DESTDIR)$(icondir); \
 	done
+	@if [ "$(MENU_LOGO)" != "apple" ]; then \
+		echo "Applying menu logo: $(MENU_LOGO)"; \
+		if [ "$(MENU_LOGO)" = "mate" ]; then \
+			LOGO_SOURCE="apps/symbolic/mate-desktop-symbolic.svg"; \
+			SYMBOLIC_SOURCE="apps/symbolic/mate-desktop-symbolic.svg"; \
+		else \
+			if [ -f "$(srcdir)/Cupertino/apps/scalable/distributor-logo-$(MENU_LOGO).svg" ]; then \
+				LOGO_SOURCE="apps/scalable/distributor-logo-$(MENU_LOGO).svg"; \
+				SYMBOLIC_SOURCE="apps/scalable/distributor-logo-$(MENU_LOGO).svg"; \
+			elif [ -f "$(srcdir)/Cupertino/apps/scalable/distributor-logo-$(MENU_LOGO)linux.svg" ]; then \
+				LOGO_SOURCE="apps/scalable/distributor-logo-$(MENU_LOGO)linux.svg"; \
+				SYMBOLIC_SOURCE="apps/scalable/distributor-logo-$(MENU_LOGO)linux.svg"; \
+			else \
+				LOGO_SOURCE=""; \
+			fi; \
+		fi; \
+		if [ -n "$$LOGO_SOURCE" ]; then \
+			for theme in $(ICONS); do \
+				DEST_THEME="$(DESTDIR)$(icondir)/$$theme"; \
+				find $$DEST_THEME -name "start-here.svg" -exec cp -f "$(DESTDIR)$(icondir)/Cupertino/$$LOGO_SOURCE" {} \;; \
+				find $$DEST_THEME -name "start-here-symbolic.svg" -exec cp -f "$(DESTDIR)$(icondir)/Cupertino/$$SYMBOLIC_SOURCE" {} \;; \
+			done; \
+		else \
+			echo "Warning: Logo source for $(MENU_LOGO) not found, keeping default."; \
+		fi; \
+	fi
 	@if [ "$(prefix)" = "$(HOME)/.local" ]; then \
 		mkdir -p $(HOME)/.icons; \
 		for icon in $(ICONS); do \

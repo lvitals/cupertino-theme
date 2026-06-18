@@ -50,6 +50,16 @@ If you cloned the repository (no pre-generated `configure` script):
 ./configure --prefix=$HOME/.local
 ```
 
+#### Customizing the Start Menu logo:
+
+You can choose a different logo for the start menu during configuration. The default is `mate`.
+
+```sh
+./configure --with-menu-logo=apple   # Use Apple logo
+./configure --with-menu-logo=distro  # Auto-detect your distribution logo
+./configure --with-menu-logo=arch    # Use specific distribution logo (e.g., arch, fedora, debian, etc.)
+```
+
 ### 3. Build and install
 
 ```sh
