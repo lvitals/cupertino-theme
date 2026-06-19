@@ -53,8 +53,23 @@ install-data-local:
 		if [ -n "$$LOGO_SOURCE" ]; then \
 			for theme in $(ICONS); do \
 				DEST_THEME="$(DESTDIR)$(icondir)/$$theme"; \
-				find $$DEST_THEME -name "start-here.svg" -exec cp -f "$(DESTDIR)$(icondir)/Cupertino/$$LOGO_SOURCE" {} \;; \
-				find $$DEST_THEME -name "start-here-symbolic.svg" -exec cp -f "$(DESTDIR)$(icondir)/Cupertino/$$SYMBOLIC_SOURCE" {} \;; \
+				if echo "$$theme" | grep -q -- "-dark"; then \
+					SRC_THEME="Cupertino-dark"; \
+				else \
+					SRC_THEME="Cupertino"; \
+				fi; \
+				if [ -f "$(DESTDIR)$(icondir)/$$SRC_THEME/$$LOGO_SOURCE" ]; then \
+					LOGO_PATH="$(DESTDIR)$(icondir)/$$SRC_THEME/$$LOGO_SOURCE"; \
+				else \
+					LOGO_PATH="$(DESTDIR)$(icondir)/Cupertino/$$LOGO_SOURCE"; \
+				fi; \
+				if [ -f "$(DESTDIR)$(icondir)/$$SRC_THEME/$$SYMBOLIC_SOURCE" ]; then \
+					SYMBOLIC_PATH="$(DESTDIR)$(icondir)/$$SRC_THEME/$$SYMBOLIC_SOURCE"; \
+				else \
+					SYMBOLIC_PATH="$(DESTDIR)$(icondir)/Cupertino/$$SYMBOLIC_SOURCE"; \
+				fi; \
+				find $$DEST_THEME -name "start-here.svg" -exec cp -f "$$LOGO_PATH" {} \;; \
+				find $$DEST_THEME -name "start-here-symbolic.svg" -exec cp -f "$$SYMBOLIC_PATH" {} \;; \
 			done; \
 		else \
 			echo "Warning: Logo source for $(MENU_LOGO) not found, keeping default."; \
