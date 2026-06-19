@@ -58,6 +58,46 @@ install_theme() {
     fi
 }
 
+# Function to uninstall the theme from a profile
+uninstall_theme() {
+    local profile_path="$1"
+    
+    echo "Uninstalling theme from profile: ${profile_path}"
+    
+    # Remove theme files
+    rm -rf "${profile_path}/chrome/Cupertino"
+    rm -f "${profile_path}/chrome/customChrome.css"
+    rm -f "${profile_path}/chrome/userChrome.css"
+    rm -f "${profile_path}/chrome/userContent.css"
+    
+    # Optionally remove empty chrome folder
+    if [ -d "${profile_path}/chrome" ] && [ -z "$(ls -A "${profile_path}/chrome" 2>/dev/null)" ]; then
+        rmdir "${profile_path}/chrome"
+    fi
+    
+    # Disable legacy user profile customizations in prefs.js
+    local prefs_file="${profile_path}/prefs.js"
+    if [ -f "${prefs_file}" ]; then
+        if grep -q "toolkit.legacyUserProfileCustomizations.stylesheets" "${prefs_file}"; then
+            sed -i 's/user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);/user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", false);/' "${prefs_file}"
+        fi
+    fi
+}
+
+# Function to show usage help
+show_help() {
+    echo "Firefox Cupertino Theme Installation Script"
+    echo ""
+    echo "Usage: ./tweaks.sh [options]"
+    echo ""
+    echo "Options:"
+    echo "  -f, --full [variant]   Install the theme to all Firefox profiles."
+    echo "                         Variants: default, adaptive, darker, nord (default is 'default')."
+    echo "  -e, --edit             Open the first profile's chrome folder in the file manager."
+    echo "  -u, --uninstall        Uninstall the theme from all Firefox profiles."
+    echo "  -h, --help             Show this help message."
+}
+
 # Parse arguments
 VARIANT="default"
 COMMAND=""
@@ -76,12 +116,26 @@ while [[ $# -gt 0 ]]; do
             COMMAND="edit"
             shift
             ;;
+        -u|--uninstall)
+            COMMAND="uninstall"
+            shift
+            ;;
+        -h|--help)
+            COMMAND="help"
+            shift
+            ;;
         *)
             echo "Unknown option: $1"
+            echo "Use -h or --help for usage details."
             exit 1
             ;;
     esac
 done
+
+if [ -z "${COMMAND}" ] || [ "${COMMAND}" == "help" ]; then
+    show_help
+    exit 0
+fi
 
 if [ "${COMMAND}" == "install" ]; then
     FOUND_PROFILES=0
@@ -101,6 +155,24 @@ if [ "${COMMAND}" == "install" ]; then
     fi
     
     echo "Done! Please restart Firefox for changes to take effect."
+elif [ "${COMMAND}" == "uninstall" ]; then
+    FOUND_PROFILES=0
+    for firefox_dir in "${FIREFOX_DIRS[@]}"; do
+        if [ -d "${firefox_dir}" ]; then
+            profiles=$(find "${firefox_dir}" -maxdepth 1 -type d -name "*.default*" -o -name "*.default-release*")
+            for profile in ${profiles}; do
+                uninstall_theme "${profile}"
+                FOUND_PROFILES=1
+            done
+        fi
+    done
+    
+    if [ "${FOUND_PROFILES}" -eq 0 ]; then
+        echo "No Firefox profiles found."
+        exit 1
+    fi
+    
+    echo "Done! Theme successfully uninstalled. Please restart Firefox."
 elif [ "${COMMAND}" == "edit" ]; then
     # Just open the first profile directory in the file manager
     for firefox_dir in "${FIREFOX_DIRS[@]}"; do
@@ -113,7 +185,5 @@ elif [ "${COMMAND}" == "edit" ]; then
         fi
     done
     echo "No Firefox profiles found."
-else
-    echo "Usage: ./tweaks.sh [-f [adaptive|darker|nord]] [-e]"
-    exit 1
 fi
+
