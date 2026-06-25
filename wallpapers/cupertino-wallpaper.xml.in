@@ -1,13 +1,20 @@
 <?xml version="1.0"?>
-<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<!DOCTYPE wallpapers SYSTEM "mate-wp-list.dtd">
 <wallpapers>
-  <wallpaper deleted="false">
-    <name>Cupertino</name>
+  <wallpaper>
+    <name>Cupertino Day</name>
     <filename>@full_datadir@/backgrounds/cupertino/cupertino-day.jpeg</filename>
-    <filename-dark>@full_datadir@/backgrounds/cupertino/cupertino-night.jpeg</filename-dark>
     <options>zoom</options>
-    <shade_type>solid</shade_type>
     <pcolor>#51a2da</pcolor>
     <scolor>#294172</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Cupertino Night</name>
+    <filename>@full_datadir@/backgrounds/cupertino/cupertino-night.jpeg</filename>
+    <options>zoom</options>
+    <pcolor>#1d1f35</pcolor>
+    <scolor>#05070f</scolor>
+    <shade_type>solid</shade_type>
   </wallpaper>
 </wallpapers>

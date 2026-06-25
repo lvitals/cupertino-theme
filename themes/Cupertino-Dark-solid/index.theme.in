@@ -8,6 +8,9 @@ Encoding=UTF-8
 GtkTheme=Cupertino-Dark-solid
 MetacityTheme=Cupertino-Dark-solid
 IconTheme=Cupertino-dark
+CursorTheme=mate
+CursorSize=24
+NotificationTheme=coco
 ButtonLayout=close,minimize,maximize:menu
 
 BackgroundImage=@full_datadir@/backgrounds/cupertino/cupertino-night.jpeg

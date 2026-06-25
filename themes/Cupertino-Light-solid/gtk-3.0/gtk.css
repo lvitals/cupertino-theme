@@ -2633,7 +2633,8 @@ menu > menuitem arrow {
   min-width: 16px;
   background-color: transparent;
   background-image: none;
-  border: none;
+  border-style: none;
+  border-width: 0;
   color: #242424;
 }
 
@@ -7934,17 +7935,6 @@ window.background:not(.csd):not(.popup) > menu > menuitem > check {
 
 window.background:not(.csd):not(.popup) > window > menu menuitem {
   transition: none;
-}
-
-#MozillaGtkWidget {
-  background-color: #f5f5f5;
-}
-
-#MozillaGtkWidget .background,
-#MozillaGtkWidget frame,
-#MozillaGtkWidget separator,
-#MozillaGtkWidget scrolledwindow {
-  background-color: #ffffff;
 }
 
 #MozillaGtkWidget headerbar.titlebar {

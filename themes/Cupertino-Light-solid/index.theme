@@ -8,6 +8,9 @@ Encoding=UTF-8
 GtkTheme=Cupertino-Light-solid
 MetacityTheme=Cupertino-Light-solid
 IconTheme=Cupertino-light
+CursorTheme=mate
+CursorSize=24
+NotificationTheme=coco
 ButtonLayout=close,minimize,maximize:menu
 
 BackgroundImage=/home/leandro/.local/share/backgrounds/cupertino/cupertino-day.jpeg
