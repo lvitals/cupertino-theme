@@ -12216,3 +12216,15 @@ TerminalWindow notebook > header.top > tabs > tab:checked,
   color: #ffffff !important;
 }
 
+#MatePanelPopupWindow {
+  background-color: transparent;
+  border: none;
+}
+
+#MatePanelPopupWindow frame {
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #242424;
+}
+

@@ -12087,3 +12087,15 @@ UnityPanelWidget:backdrop,
 @define-color BLACK_500 #393634;
 @define-color BLACK_700 #33302F;
 @define-color BLACK_900 #2B2928;
+
+#MatePanelPopupWindow {
+  background-color: transparent;
+  border: none;
+}
+
+#MatePanelPopupWindow frame {
+  border: none;
+  border-radius: 12px;
+  background-color: rgba(51, 51, 51, 0.96);
+  color: #dedede;
+}
