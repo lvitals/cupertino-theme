@@ -7939,6 +7939,7 @@ window.background:not(.csd):not(.popup) > window > menu menuitem {
 
 #MozillaGtkWidget headerbar.titlebar {
   padding: 0 12px;
+  border-radius: 10px 10px 0 0;
 }
 
 #MozillaGtkWidget scrollbar {
@@ -12190,9 +12191,9 @@ TerminalWindow notebook > stack > grid,
 .mate-terminal notebook,
 .mate-terminal notebook > stack,
 .mate-terminal notebook > stack > grid {
-  background-color: #242424 !important;
-  background-image: none !important;
-  color: #dedede !important;
+  background-color: #242424;
+  background-image: none;
+  color: #dedede;
 }
 
 TerminalWindow notebook > header,
@@ -12203,17 +12204,17 @@ TerminalWindow notebook > header.top > tabs > tab,
 .terminal-window notebook > header.top > tabs > tab,
 .mate-terminal notebook > header,
 .mate-terminal notebook > header.top > tabs > tab {
-  background-color: #333333 !important;
-  background-image: none !important;
-  color: #dedede !important;
+  background-color: #333333;
+  background-image: none;
+  color: #dedede;
 }
 
 TerminalWindow notebook > header.top > tabs > tab:checked,
 .terminal-window notebook > header.top > tabs > tab:checked,
 .mate-terminal notebook > header.top > tabs > tab:checked {
-  background-color: #242424 !important;
-  background-image: none !important;
-  color: #ffffff !important;
+  background-color: #242424;
+  background-image: none;
+  color: #ffffff;
 }
 
 #MatePanelPopupWindow {
@@ -12227,4 +12228,3 @@ TerminalWindow notebook > header.top > tabs > tab:checked,
   background-color: #ffffff;
   color: #242424;
 }
-

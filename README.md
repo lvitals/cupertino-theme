@@ -13,7 +13,11 @@ Cupertino comes with a matching icon set and a curated collection of wallpapers.
 | `themes/Cupertino/` | GTK 2, GTK 3, Metacity/Marco window decorations (multiple variants) |
 | `icons/Cupertino/` | Full icon theme |
 | `wallpapers/` | Background images and XML descriptor |
-| `other/` | Extra assets for Firefox and Plank |
+| `other/` | Optional legacy assets; they are not installed or required by the GTK theme |
+
+Firefox uses the native GTK integration from the Cupertino Light/Dark themes. The
+files under `other/firefox/` are optional legacy customizations and should not be
+installed when the goal is to preserve Firefox's native interface.
 
 ---
 

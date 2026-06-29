@@ -7920,6 +7920,7 @@ window.background:not(.csd):not(.popup) > window > menu menuitem {
 
 #MozillaGtkWidget headerbar.titlebar {
   padding: 0 12px;
+  border-radius: 10px 10px 0 0;
 }
 
 #MozillaGtkWidget scrollbar {
