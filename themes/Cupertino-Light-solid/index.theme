@@ -13,4 +13,4 @@ CursorSize=24
 NotificationTheme=coco
 ButtonLayout=close,minimize,maximize:menu
 
-BackgroundImage=/home/leandro/.local/share/backgrounds/cupertino/cupertino-day.jpeg
+BackgroundImage=/usr/share/backgrounds/cupertino/cupertino-day.jpeg
