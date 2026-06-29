@@ -12183,3 +12183,52 @@ UnityPanelWidget:backdrop,
 @define-color BLACK_500 #393634;
 @define-color BLACK_700 #33302F;
 @define-color BLACK_900 #2B2928;
+
+/* Keep all terminal widgets and terminal window components dark */
+vte-terminal,
+VteTerminal,
+TerminalScreen,
+.terminal-screen,
+TerminalWindow,
+.mate-terminal,
+.terminal-window,
+TerminalWindow vte-terminal,
+TerminalWindow VteTerminal,
+TerminalWindow TerminalScreen,
+.mate-terminal vte-terminal,
+.mate-terminal VteTerminal,
+.mate-terminal .terminal-screen,
+TerminalWindow grid,
+TerminalWindow notebook,
+TerminalWindow notebook > stack,
+TerminalWindow notebook > stack > grid,
+.mate-terminal grid,
+.mate-terminal notebook,
+.mate-terminal notebook > stack,
+.mate-terminal notebook > stack > grid {
+  background-color: #242424 !important;
+  background-image: none !important;
+  color: #dedede !important;
+}
+
+TerminalWindow notebook > header,
+TerminalWindow notebook > header.top > tabs > tab,
+.terminal-window,
+.terminal-window notebook,
+.terminal-window notebook > header,
+.terminal-window notebook > header.top > tabs > tab,
+.mate-terminal notebook > header,
+.mate-terminal notebook > header.top > tabs > tab {
+  background-color: #333333 !important;
+  background-image: none !important;
+  color: #dedede !important;
+}
+
+TerminalWindow notebook > header.top > tabs > tab:checked,
+.terminal-window notebook > header.top > tabs > tab:checked,
+.mate-terminal notebook > header.top > tabs > tab:checked {
+  background-color: #242424 !important;
+  background-image: none !important;
+  color: #ffffff !important;
+}
+

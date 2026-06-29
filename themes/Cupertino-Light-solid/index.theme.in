@@ -12,5 +12,10 @@ CursorTheme=mate
 CursorSize=24
 NotificationTheme=coco
 ButtonLayout=close,minimize,maximize:menu
+ApplicationFont=Sao Paulo 11
+DocumentsFont=Sao Paulo 12
+DesktopFont=Sao Paulo 11
+WindowTitleFont=Sao Paulo 11
+MonospaceFont=Sao Paulo Mono 13
 
 BackgroundImage=@full_datadir@/backgrounds/cupertino/cupertino-day.jpeg

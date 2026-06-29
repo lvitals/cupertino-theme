@@ -17,4 +17,148 @@
     <scolor>#05070f</scolor>
     <shade_type>solid</shade_type>
   </wallpaper>
+  <wallpaper>
+    <name>Pixel Aurora</name>
+    <filename>@full_datadir@/backgrounds/cupertino/aurora.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel Balloon</name>
+    <filename>@full_datadir@/backgrounds/cupertino/balloon.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel Bridge</name>
+    <filename>@full_datadir@/backgrounds/cupertino/bridge.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel Canyon</name>
+    <filename>@full_datadir@/backgrounds/cupertino/canyon.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel Cliff</name>
+    <filename>@full_datadir@/backgrounds/cupertino/cliff.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel Clouds</name>
+    <filename>@full_datadir@/backgrounds/cupertino/clouds.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel Fisherman</name>
+    <filename>@full_datadir@/backgrounds/cupertino/fisherman.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel Fjord</name>
+    <filename>@full_datadir@/backgrounds/cupertino/fjord.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel Islands</name>
+    <filename>@full_datadir@/backgrounds/cupertino/islands.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel Lasers</name>
+    <filename>@full_datadir@/backgrounds/cupertino/lasers.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel Mountain</name>
+    <filename>@full_datadir@/backgrounds/cupertino/mountain.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel Road</name>
+    <filename>@full_datadir@/backgrounds/cupertino/road.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel Sand</name>
+    <filename>@full_datadir@/backgrounds/cupertino/sand.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel SpaceX Falcon Heavy Demo Mission</name>
+    <filename>@full_datadir@/backgrounds/cupertino/spacex-falcon-heavy-demo-mission.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel SpaceX Nusantara Satu Mission</name>
+    <filename>@full_datadir@/backgrounds/cupertino/spacex-nusantara-satu-mission.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel Temple</name>
+    <filename>@full_datadir@/backgrounds/cupertino/temple.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel Trees</name>
+    <filename>@full_datadir@/backgrounds/cupertino/trees.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Pixel Waterfall</name>
+    <filename>@full_datadir@/backgrounds/cupertino/waterfall.jpg</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
 </wallpapers>
